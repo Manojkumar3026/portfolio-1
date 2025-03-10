@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <img src="images/qq.png" class="logo" alt="Logo">
+            <nav>
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#Achievements">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+            </nav>
+            <center>
+            <div class="headet-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Manoj Kumar </span> <br>from Triupattur</h1>
+                <a href="cv/resume.pdf" download class="btn">Download CV</a>
+            </div>
+        </div>
+    </div>
+</center>
+<hr>
+    
+    <!-- -------------------------about------------------ -->
+    <div id="about" class="about">
+        <div class="container">
+            <div class ="about-content">
+            <div class="col-about-2">
+                <h2 class="sub-title">About Me</h2>
+                <p>Hi, I'm Manojkumar, a passionate Software Developer with expertise in Java,My Sql and web development. I have worked on projects like e-commerce platforms, quiz apps, and game development, showcasing my strong coding and problem-solving skills. My goal is to create innovative applications that make a difference.I’m always eager to learn new technologies and improve my skills.When I'm not coding, I enjoy exploring new tech trends and helping others.</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                <p class="tab-links"onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-content active-tab" id="skills">
+                <ul>
+                    <ul>
+                        <li><span>Java</span><br>Problem-solving and algorithm development</li>
+                        <li><span>Web Development</span><br>HTML, CSS, JavaScript, and responsive design</li>
+                        <li><span>MySQL</span><br>Database management and querying</li>
+                        <li><span>Power BI</span><br>Interactive data visualization and report generation</li>
+                    </ul>
+                    
+                </ul>
+            </div>
+            <div class="tab-content" id="experience">
+                <ul>
+                    <li><span>Internpe Internship</span><br>Web development using HTML, CSS, and JavaScript</li>
+                    <li><span>Analytics Vidhya Internship</span><br>Data Science projects using Machine Learning</li>
+                    <li><span>Marcello Tech Internship</span><br>IoT Applications using NodeMCU</li>
+                    <li><span>Tessolve Internship</span><br>Worked in VLSI domain</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="education">
+                <ul>
+                    <li><span>B.Tech in AI & Data Science</span><br>Adhi College of Engineering and Technology</li>
+                    <li><span>C and Java Course</span><br>Silicon Software Services</li>
+                    <li><span>Embedded and IoT Training</span><br>Completed with Arduino and NodeMCU</li>
+                </ul>
+            </div>
+            
+            </div>
+
+        </div>
+    </div>
+</div>
+<hr>
+<!-- ----------- Projects Section ----------- -->
+<div id="projects">
+    <div class="container">
+        <center>
+        <h1 class="sub-title">Projects</h1>
+    </center><br>
+        <div class="project-list">
+            <div class="project">
+                <h2>Quiz App</h2>
+                <p>Built using HTML, CSS, and JavaScript. Includes dynamic question rendering and score calculation.</p>
+                <a href="https://github.com/Manojkumar3026/quiz-app" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h2>E-commerce Book Store Website</h2>
+                <p>Developed an e-commerce platform with a buying the Book,shopping cart feature using JavaScript and MySQL.</p>
+                <a href="https://github.com/Manojkumar3026/Book-store" target="_blank">View Project</a>
+            </div>
+            
+            <div class="project">
+                <h2>Food Rescue Website</h2>
+                <p>Currently developing a platform to connect NGOs and hotels for food donations using HTML, CSS, JavaScript, and MySQL.</p>
+                <a href="https://github.com/Manojkumar3026/food-recuse" target="_blank">View Project</a>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<!-- ----------- Achievements Section ----------- -->
+<center>
+<div id="achievements">
+    <div class="container">
+        <h1 class="sub-title">Achievements</h1><br>
+        <ul class="achievement-list">
+            <li>🏆 Best Volunteer Award for 2022 and 2023 – NSS.</li>
+            <li>🌍 Planted over 2 lakh palm seeds with an NGO team.</li>
+            <li>📢 Served as Volunteer Secretary for NSS during 2023-2024.</li>
+        </ul>
+    </div>
+</div>
+</center>
+<hr>
+<!-- ----------- Contact Section ----------- -->
+<div id="contact">
+    <div class="container">
+        <center>
+        <h1 class="sub-title">Contact Me</h1>
+    </center>
+    <br>
+    <br>
+
+        <div class="contact-content">
+            <div class="contact-info">
+                <p><strong>Email:</strong> manojkumartpt15@gmail.com</p>
+                <p><strong>Phone:</strong> +91 9080320311</p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/manojkumar1215" target="_blank">linkedin.com/in/manojkumar1215</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Manojkumar3026" target="_blank">github.com/manojkumar3026</a></p>
+            </div>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- ----------- Footer Section ----------- -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h2>Manoj Kumar</h2>
+                <p>Passionate Software Developer | Java | MySQL | Web Development</p>
+            </div>
+            <div class="footer-center">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:manojkumartpt15@gmail.com">manojkumartpt15@gmail.com</a></p>
+                <p>Phone: <a href="tel:+919080320311">+91 9080320311</a></p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/manojkumar1215" target="_blank"><img src="images/linkden in.webp" alt="LinkedIn"></a>
+                    <a href="https://github.com/Manojkumar3026" target="_blank"><img src="images/gitbub.png" alt="GitHub"></a>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Manoj Kumar. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content");
+
+function opentab(tabname) {
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+
+}
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        if (name && email && message) {
+            alert('Message Sent Successfully!');
+            document.getElementById('contact-form').reset();
+        } else {
+            alert('Please fill all fields.');
+        }
+    });
+
+
+
+</script>
+</body>
+</html>
